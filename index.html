@@ -14,6 +14,10 @@
         padding: 200px 0;
         /* background-color: grey; */
       }
+      .accordion-button::after {
+        content: "\002B"; /* Unicode for the plus sign */
+        float: right;
+      }
     </style>
   </head>
   <body>
@@ -188,7 +192,7 @@
               class="accordion-collapse collapse"
               id="netfli"
               aria-labelledby="accordion-header"
-              data-bs-parent="faqs"
+              data-bs-parent="#faqs"
             >
               <div class="accordion-body">
                 <p>
@@ -201,35 +205,6 @@
                   single commercial - all for one low monthly price. There's
                   always something new to discover and new TV shows and movies
                   are added every week!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item bg-light text-white">
-            <h2 class="accordion-header bg-light" id="header-2">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#netfli-2"
-                aria-expanded="false"
-                aria-controls="netfli-2"
-              >
-                How much does Netflix cost?
-              </button>
-            </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="netfli-2"
-              aria-labelledby="accordion-header"
-              data-bs-parent="faqs"
-            >
-              <div class="accordion-body">
-                <p>
-                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
-                  streaming device, all for one fixed monthly fee. Plans range
-                  from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.
                 </p>
               </div>
             </div>
@@ -281,7 +256,7 @@
               class="accordion-collapse collapse"
               id="netfli-3"
               aria-labelledby="accordion-header"
-              data-bs-parent="faqs"
+              data-bs-parent="#faqs"
             >
               <div class="accordion-body">
                 <p>
@@ -302,18 +277,8 @@
           </div>
 
           <div class="accordion-item bg-light text-white">
-            <h2 class="accordion-header bg-light" id="header-4">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#netfli-4"
-                aria-expanded="false"
-                aria-controls="netfli-4"
-              >
-                How do I cancel?
-              </button>
-              <div class="accordion-item bg-light text-white">
+              
+            
                 <h2 class="accordion-header bg-light" id="header-4">
                   <button
                     class="accordion-button"
@@ -330,7 +295,7 @@
                   class="accordion-collapse collapse"
                   id="netfli-4"
                   aria-labelledby="accordion-header"
-                  data-bs-parent="faqs"
+                  data-bs-parent="#faqs"
                 >
                   <div class="accordion-body">
                     <p>
@@ -343,20 +308,6 @@
                 </div>
               </div>
             </h2>
-            <div
-              class="accordion-collapse collapse"
-              id="netfli-2"
-              aria-labelledby="accordion-header"
-              data-bs-parent="faqs"
-            >
-              <div class="accordion-body">
-                <p>
-                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
-                  streaming device, all for one fixed monthly fee. Plans range
-                  from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
